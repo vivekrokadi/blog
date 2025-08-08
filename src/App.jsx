@@ -15,7 +15,8 @@ const App = () => {
     const userData = await authService.getCurrentUser();
 
     if (userData && userData.email) { 
-      dispatch(login({ userData }));
+      dispatch(login(userData));
+
     } else {
       dispatch(logout());
     }
