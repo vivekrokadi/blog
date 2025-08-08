@@ -43,6 +43,11 @@ export default function PostForm({ post }) {
       if (file) {
         const fileId = file.$id;
         data.featuredImage = fileId;
+        if (!userData || !userData.$id) {
+          alert("You must be logged in to add a post.");
+          return;
+        }
+
         const dbPost = await appwriteService.createPost({
           ...data,
           userId: userData.$id,
