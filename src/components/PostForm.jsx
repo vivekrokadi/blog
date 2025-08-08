@@ -130,7 +130,16 @@ export default function PostForm({ post }) {
           label="Status"
           className="mb-4"
           {...register("status", { required: true })}
+          
         />
+        <div>
+        {
+        
+        console.log("userData:", userData)
+
+          }
+        </div>
+
         <button
           type="submit"
           className={`px-4 py-2 rounded-lg ${
