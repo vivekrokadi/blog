@@ -36,32 +36,9 @@ function Home() {
             </p>
           </div>
           <div className="flex flex-wrap w-full justify-center">
-            <div class="px-6 py-1.5 mb-4 border border-blue-600/40 bg-blue-600/10 rounded-full text-lg text-blue-600 font-semibold">
+            <div className="px-6 py-1.5 mb-4 border border-blue-600/40 bg-blue-600/10 rounded-full text-lg text-blue-600 font-semibold">
               <p>Login to read posts</p>
             </div>
-          </div>
-          <div class="flex flex-col items-center justify-center text-center space-y-2 my-32">
-            <h1 class="md:text-4xl text-2xl font-semibold">
-              Never Miss a Blog!
-            </h1>
-            <p class="md:text-lg text-gray-500/70 pb-8">
-              Subscribe to get the latest blog, new tech, and exclusive news.
-            </p>
-            <form class="flex items-center justify-between max-w-2xl w-full md:h-13 h-12">
-              <input
-                class="border border-gray-300 rounded-md h-full border-r-0 outline-none w-full rounded-r-none px-3 text-gray-500"
-                placeholder="Enter your email id"
-                required=""
-                type="text"
-                fdprocessedid="f5rbgp"
-              />
-              <button
-                type="submit"
-                class="md:px-12 px-8 h-full text-white bg-blue-600/80 hover:bg-blue-600 transition-all cursor-pointer rounded-md rounded-l-none"
-              >
-                Subscribe
-              </button>
-            </form>
           </div>
         </Container>
       </div>
@@ -71,7 +48,7 @@ function Home() {
   return (
     <div className="w-full py-8">
       <Container>
-        <div className="flex flex-wrap gap-5">
+        <div className="flex flex-wrap gap-5 justify-center">
           {posts.map((post) => (
             <div className="p-2 w-[350px]" key={post.$id}>
               <PostCard {...post} />

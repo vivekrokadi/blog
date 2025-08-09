@@ -13,7 +13,7 @@ function Footer() {
                 <Logo width="100px" />
               </div>
               <div>
-                <p className="w-[80%]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum unde quaerat eveniet cumque accusamus atque qui error quo enim fugiat?</p>
+                <p className="w-[80%]">A place to share thoughts, ideas, and stories. Discover engaging posts, stay inspired, and connect with our growing community.</p>
               </div>
             </div>
           </div>
@@ -39,22 +39,7 @@ function Footer() {
                     Pricing
                   </Link>
                 </li>
-                <li className="mb-4">
-                  <Link
-                    className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    to="/"
-                  >
-                    Affiliate Program
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    to="/"
-                  >
-                    Press Kit
-                  </Link>
-                </li>
+                
               </ul>
             </div>
           </div>
@@ -86,14 +71,6 @@ function Footer() {
                     to="/"
                   >
                     Contact Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    to="/"
-                  >
-                    Customer Support
                   </Link>
                 </li>
               </ul>
