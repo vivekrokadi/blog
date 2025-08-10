@@ -46,7 +46,7 @@ function Home() {
   }
 
   return (
-    <div className="w-full py-8">
+    <div className="w-full py-8 overflow-x-hidden">
       <Container>
         <div className="flex flex-wrap gap-5 justify-center">
           {posts.map((post) => (
